@@ -10,17 +10,17 @@ function Navbar() {
         </div>
         <ul className="flex items-center">
           <li className="mr-6">
-            <a href="/productos" className="text-white hover:text-gray-300">
+            <a href="/products" className="text-white hover:text-gray-300">
               Productos
             </a>
           </li>
           <li className="mr-6">
-            <a href="/nosotros" className="text-white hover:text-gray-300">
+            <a href="/about" className="text-white hover:text-gray-300">
               Nosotros
             </a>
           </li>
           <li className="mr-6">
-            <a href="/contacto" className="text-white hover:text-gray-300">
+            <a href="/contact" className="text-white hover:text-gray-300">
               Contacto
             </a>
           </li>
