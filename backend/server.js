@@ -1,17 +1,16 @@
 const express = require('express');
-const productRoutes = require('./routes/productRoutes');
-
-
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
+// Importar rutas
+const productsRoutes = require('./routes/productsRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 
-app.use(express.json());
+// Usar las rutas
+app.use('/api', productsRoutes);
+app.use('/api', cartRoutes);
 
-app.use('/api/products', productRoutes);
-
-
-
+// Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en el puerto ${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
