@@ -4,7 +4,7 @@ import ClothingCategories from '../components/ClothingCategories/ClothingCategor
 const Home = () => {
   return (
     <div>
-      {/* Sección de Banner */}
+      
       <section className="banner-section">
         <div className="banner-content">
           <h1>Bienvenido a Mi Tienda de Ropa</h1>
